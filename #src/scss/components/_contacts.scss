@@ -1,0 +1,39 @@
+.contacts {
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 550px;
+        padding: 30px 0;
+        margin: 0 auto;
+        box-shadow: $shadow1;
+
+        span {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    &__item {
+        margin: 0 20px;
+
+        &--margin {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts {
+        text-align: center;
+
+        &__row {
+            flex-direction: column;
+            padding-top: 40px;
+        }
+
+        &__item li {
+            margin-bottom: 20px;
+        }
+    }
+}

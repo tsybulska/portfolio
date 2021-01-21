@@ -1,0 +1,21 @@
+@import "../../node_modules/normalize.css/normalize";
+
+@import "_mixin";
+
+@import "_fonts";
+
+@import "_variables";
+
+@import "_global";
+
+@import "_preloader-backtop";
+
+@import "_btn";
+
+@import "_tooltip";
+
+@import "./components/_header";
+@import "./components/_projects";
+@import "./components/_stack";
+@import "./components/_contacts";
+@import "./components/_footer";

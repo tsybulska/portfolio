@@ -1,0 +1,10 @@
+@import "./_header-animation";
+@import "./_hero";
+@import "./_nav";
+
+.header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}

@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    background: radial-gradient(ellipse at bottom, $color-primary 0%, $color-bg1 100%);
+    color: $color-text1;
+    font-family: $font1;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $color-bg1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $color-primary;
+
+        &:hover {
+            background: $color-bg2;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: $font2;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 50px;
+    text-align: center;
+
+    span {
+        position: relative;
+
+        &:after {
+            @include underline;
+        }
+    }
+}
+
+h4 {
+    margin: 30px 0 10px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+nav ul li {
+    margin-bottom: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    max-width: 1150px;
+    margin: 80px auto;
+    padding: 70px 40px;
+    background-color: $color-bg1;
+    box-shadow: $shadow1;
+    border-radius: $border-radius;
+    transform: scale(0.98);
+    transition: transform 0.5s;
+}
+
+@media (max-width: 767px) {
+    .main {
+        margin: 20px 15px;
+        padding: 70px 30px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+}

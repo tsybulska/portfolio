@@ -1,0 +1,112 @@
+.projects {
+    &__item {
+        margin-bottom: 100px;
+    }
+
+    &__img {
+        position: relative;
+        display: block;
+        height: 100%;
+        max-height: 50vh;
+        margin: 0 20px 0 0;
+        border-radius: $border-radius;
+        box-shadow: $shadow1;
+        overflow-y: scroll;
+        cursor: pointer;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $color-bg1;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $color-primary;
+
+            &:hover {
+                background: $color-bg2;
+            }
+        }
+
+        &:focus,
+        &:hover {
+            .projects__icon {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    &__icon {
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: url("../assets/icons/sprite.svg#double-tap");
+        top: 5%;
+        right: 4%;
+        z-index: 5;
+        opacity: 1;
+        visibility: visible;
+        transition: all 1s ease-in-out;
+    }
+
+    &__about {
+        padding: 0 0 0 20px;
+
+        .projects-about {
+            &__header {
+                text-align: center;
+
+                span {
+                    color: $color-secondary;
+                    opacity: 0.5;
+                }
+            }
+
+            &__btn {
+                display: flex;
+                justify-content: center;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .projects {
+        &__item {
+            display: flex;
+        }
+
+        &__img {
+            width: 40%;
+        }
+
+        &__about {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .projects {
+        &__img {
+            margin: 0;
+            height: 50vh;
+            background: none;
+            overflow-y: scroll;
+
+            img {
+                display: block;
+            }
+        }
+
+        &__about {
+            padding: 0;
+            margin-top: 50px;
+        }
+    }
+}

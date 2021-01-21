@@ -1,0 +1,32 @@
+header.header
+    #stars1
+    #stars2
+    #stars3
+    #hero.hero
+        .hero__wrapper
+            h1 Hello! I'm Olena Tsybulska
+            .hero__icons
+                .tooltip
+                    a(href='https://github.com/tsybulska' target='_blank').hero__icon
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#github')
+                        span.tooltip-text open code
+                #theme-btn.theme-btn.hero__icon.tooltip
+                    svg
+                        use(xlink:href='./assets/icons/sprite.svg#settings-alt')
+                    span.tooltip-text switch theme
+    nav#nav.nav
+        .nav__icon
+            span
+            span
+            span
+        .nav__menu
+            .logo
+                a(href='#hero') Tsybulska
+            ul.nav__body
+                li
+                    a(href='#projects') Projects
+                li
+                    a(href='#stack') Stack
+                li
+                    a(href='#contacts') Contacts
