@@ -22,20 +22,19 @@ window.onload = function () {
 const $themeHead = document.getElementById('theme-head')
 const $themeBtn = document.getElementById('theme-btn')
 
-if (localStorage.getItem('theme-switched')) {
-    $themeHead.href = './assets/themes/theme-light.min.css'
-}
+const dark = '--color-bg:#1f1f1f;--color-text:#fcfcfc;--color-primary:#343341;--color-secondary:#28aaba;--color-shadow1:0 0 10px 5px rgba(255, 255, 255, 0.05);--color-shadow2:0 5px 0 rgba(255, 255, 255, 0.1)'
+const light = '--color-bg:#ffffff;--color-text:#322824;--color-primary:#e0d1cc;--color-secondary:#00b5ff;--color-shadow1:0 0 10px 5px rgba(0, 0, 0, 0.05);--color-shadow2:0 5px 0 rgba(0, 0, 0, 0.1)'
 
 $themeBtn.addEventListener('click', switchTheme)
 
 function switchTheme() {
     if (!localStorage.getItem('theme-switched')) {
         document.body.classList.add('theme-switched')
-        $themeHead.href = './assets/themes/theme-light.min.css'
+        document.body.setAttribute('style', light)
         localStorage.setItem('theme-switched', JSON.stringify(true))
     } else {
         document.body.classList.remove('theme-switched')
-        $themeHead.href = './assets/themes/theme-dark.min.css'
+        document.body.setAttribute('style', dark)
         localStorage.removeItem('theme-switched')
     }
 }

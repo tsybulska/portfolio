@@ -32,6 +32,7 @@
         "gulp-csso": "^4.0.1",
         "gulp-eslint": "^6.0.0",
         "gulp-fonter": "^0.3.0",
+        "gulp-group-css-media-queries": "^1.2.2",
         "gulp-html-bem-validator": "^1.0.5",
         "gulp-imagemin": "^7.1.0",
         "gulp-plumber": "^1.2.1",
@@ -48,11 +49,15 @@
         "gulp-ttf2woff2": "^3.0.0",
         "gulp-uglify-es": "^2.0.0",
         "gulp-w3c-html-validator": "^2.0.1",
+        "gulp-webp-html": "^1.0.2",
+        "gulp-webpcss": "^1.1.1",
+        "imagemin-webp": "^6.0.0",
         "stylelint": "^13.8.0",
         "stylelint-config-htmlacademy": "^0.1.4",
         "stylelint-config-standard": "^20.0.0",
         "stylelint-config-standard-scss": "^1.1.0",
-        "stylelint-scss": "^3.18.0"
+        "stylelint-scss": "^3.18.0",
+        "webp-converter": "^2.2.3"
     },
     "license": "ISC",
     "presets": [

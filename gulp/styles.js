@@ -4,9 +4,11 @@ const plumber = require('gulp-plumber')
 const stylelint = require('gulp-stylelint')
 const sourcemaps = require('gulp-sourcemaps')
 const sass = require('gulp-sass')
+const webpcss = require('gulp-webpcss')
+var gcmq = require('gulp-group-css-media-queries')
 const autoprefixer = require('gulp-autoprefixer')
 const csso = require('gulp-csso')
-const rename = require("gulp-rename")
+const rename = require('gulp-rename')
 
 module.exports = function styles() {
     return gulp.src('./#src/scss/styles.scss')
@@ -20,6 +22,8 @@ module.exports = function styles() {
         }))
         //.pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(webpcss({}))
+        .pipe(gcmq())
         .pipe(autoprefixer({ cascade: false }))
         .pipe(csso({
             restructure: false,
