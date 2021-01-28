@@ -54,7 +54,7 @@
         font-size: 30px;
         font-style: italic;
         transition: all 0.5s ease-in-out;
-        z-index: 10;
+        z-index: 6;
         opacity: 0;
         visibility: hidden;
 
@@ -72,7 +72,7 @@
         width: 30px;
         height: 16px;
         cursor: pointer;
-        z-index: 5;
+        z-index: 7;
 
         span {
             top: calc(50% - 1px);
@@ -159,11 +159,6 @@ body.nav-fixed {
                 a {
                     padding: 15px 100px;
                 }
-            }
-
-            .logo {
-                background-color: $color-text2;
-                color: $color-text1;
             }
         }
     }

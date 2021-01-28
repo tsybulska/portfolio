@@ -11,7 +11,8 @@
         "eslint-fix": "eslint ./#src/scripts/**/*.js --fix"
     },
     "dependencies": {
-        "normalize.css": "^8.0.1"
+        "normalize.css": "^8.0.1",
+        "svgxuse": "^1.2.6"
     },
     "devDependencies": {
         "@babel/core": "^7.12.10",
@@ -40,6 +41,7 @@
         "gulp-pug-linter": "^1.4.0",
         "gulp-real-favicon": "^0.3.2",
         "gulp-rename": "^2.0.0",
+        "gulp-rezzy": "^1.1.0",
         "gulp-sass": "^4.1.0",
         "gulp-sourcemaps": "^3.0.0",
         "gulp-stylelint": "^13.0.0",

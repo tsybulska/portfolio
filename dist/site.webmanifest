@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Olena Tsybulska",
+    "short_name": "Olena Tsybulska",
+    "description": "Olena Tsybulska Portfolio",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

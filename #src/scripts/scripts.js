@@ -1,3 +1,8 @@
+// polyfill ie
+if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
 // preloader
 const $preloader = document.getElementById('preloader')
 
