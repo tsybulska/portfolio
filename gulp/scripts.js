@@ -10,7 +10,7 @@ const terser = require('gulp-terser')
 
 module.exports = function scripts() {
     return gulp.src([
-            'node_modules/svgxuse/svgxuse.js',
+            './node_modules/svgxuse/svgxuse.js',
             './#src/scripts/scripts.js'
         ])
         .pipe(concat('scripts.js'))

@@ -254,19 +254,28 @@ section#projects.projects
                 ul
                     li clean.js — Clean folder
                     li pug2html.js — Pug to HTML, pug linter, html validator, bem validator
-                    li styles.js — SCSS to CSS, stylelint, sourcemaps, autoprefixer, csso, rename to min
-                    li scripts.js — Scripts, eslint.format, sourcemaps, babel, terser, rename to min
+                    li styles.js — SCSS to CSS, webpcss, group css media, stylelint, sourcemaps, autoprefixer, csso, rename to min
+                    li scripts.js — Scripts, concat to one file scripts.js and libs, eslint.format, sourcemaps, babel, terser, rename to min
                     li fonts.js — Fonts, copy woff2 and woff, other convert to woff2 and woff
-                    li img.js — Images, copy favicon.ico to dist, optimize (quality 75) and copy images
-                    li svgSprites.js — SVG sprites, make sprite and template to /dist/assets/icons/
-                    li copyDependencies.js — Copy dependencies, terser, minimize to libs.min.js
-                    li favicon.js — Favicon, create from svg
+                    li img.js — Images, optimize (quality 85) and copy images, convert to webp and resize
+                    li svgSprites.js — SVG sprites, optimize, make sprite and template to /dist/assets/icons/
+                    li copyDependencies.js — Copy dependencies, template if dont want to concat libs with scripts.js
+                    li favicon.js — Favicon, create from svg icon
                     li favicon2html.js — Favicon to HTML, add favicon links to HTML head
                     li fontsStyle.js — Fonts style, write info about fonts to /#src/scss/_fonts.scss
                     li serve.js — Live server, watching
                 h4 Details
-                p Made my own Build
+                ul
+                    li Made my own Build
+                    li Resize mobile or tablet images, retina 1x, 2x, 3x via gulp task and use with picture tag
+                    li Automaticly create svg sprite by adding svg icons to /#src/assets/icons/, svg support ie
+                    li Automaticly create favicon by adding the svg icon to /#src/assets/favicon/
+                    li Convert fonts to woff2 and woff, copy them to /#src/assets/fonts/ and clean /#src/scss/_fonts.scss/ file
+                    li Two pug template pages with separate includes folders, common files in extends folder (layout, header, footer)
+                    li SCSS styles with separate components
+                    li Copy script libs via gulp task from /node_modules/ and copy them to scripts.js
             .projects-about__btn
+                a(href='https://tsybulska.github.io/gulp-build/' target='_blank' rel='nofollow noopener').btn.btn-open Demo
                 a(href='https://github.com/tsybulska/gulp-build' target='_blank' rel='nofollow noopener').btn.btn-code Code and Readme
     .projects__item
         .projects__img
@@ -287,5 +296,6 @@ section#projects.projects
                 h4 Details
                 p Made my own Build
             .projects-about__btn
+                a(href='https://tsybulska.github.io/gulp-build/' target='_blank' rel='nofollow noopener').btn.btn-open Demo
                 a(href='https://github.com/tsybulska/webpack-build' target='_blank' rel='nofollow noopener').btn.btn-code Code and Readme
                 
