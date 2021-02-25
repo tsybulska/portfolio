@@ -97,6 +97,44 @@ img {
     max-width: 100%;
 }
 
+.projects-img {
+    &__prev,
+    &__next {
+        font-size: 2rem;
+    }
+}
+
+input[type='radio'] {
+    position: absolute;
+    left: -9999px;
+}
+
+// highlights the active filter category
+[value='All'] ~ .projects__label li [for='All'],
+[value='HTML'] ~ .projects__label li [for='HTML'],
+[value='JavaScript'] ~ .projects__label li [for='JavaScript'],
+[value='ReactJS'] ~ .projects__label li [for='ReactJS'],
+[value='Build'] ~ .projects__label li [for='Build'] {
+    @extend .btn;
+}
+
+[value='All']:checked ~ .projects__label [for='All'],
+[value='HTML']:checked ~ .projects__label [for='HTML'],
+[value='JavaScript']:checked ~ .projects__label [for='JavaScript'],
+[value='ReactJS']:checked ~ .projects__label [for='ReactJS'],
+[value='Build']:checked ~ .projects__label [for='Build'] {
+    background-color: $color-bg1;
+    color: $color-text1;
+}
+
+// on click only the target posts will be visible
+[value='HTML']:checked ~ .projects__list .projects__item:not([data-category~='HTML']),
+[value='JavaScript']:checked ~ .projects__list .projects__item:not([data-category~='JavaScript']),
+[value='ReactJS']:checked ~ .projects__list .projects__item:not([data-category~='ReactJS']),
+[value='Build']:checked ~ .projects__list .projects__item:not([data-category~='Build']) {
+    display: none;
+}
+
 .main {
     max-width: 1150px;
     margin: 80px auto;
@@ -108,7 +146,14 @@ img {
     transition: transform 0.5s;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 769px) {
+    // all posts will be visible
+    [value='All']:checked ~ .projects__list [data-category] {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
     .main {
         margin: 20px 15px;
         padding: 70px 30px;
@@ -117,5 +162,9 @@ img {
     .btn {
         padding: 10px 20px;
         margin-top: 10px;
+    }
+
+    [value='All']:checked ~ .projects__list [data-category] {
+        display: block;
     }
 }

@@ -112,7 +112,7 @@ $nav.querySelectorAll('a[href^="#"').forEach(link => {
 // nav mobile toggle
 let $navIcon = document.querySelector('.nav__icon')
 
-$navIcon.addEventListener('click', function (e) {
+$navIcon.addEventListener('click', function() {
     $nav.classList.toggle('menu-active')
 })
 
@@ -123,3 +123,33 @@ document.documentElement.addEventListener('click', function (e) {
     }
 })
 
+// images carousel
+document.querySelectorAll('.projects-img__btn').forEach(btn => {
+    btn.addEventListener('click', projectsBtn)
+})
+
+function projectsBtn(event) {
+    let btn = event.target.closest('a').className
+    let btnNumber = event.target.closest('.projects__img').querySelector('.projects-img__num').querySelector('span')
+    let sliderElements = event.target.closest('.projects__img').querySelector('.projects-img__slider').querySelectorAll('.projects-img__slide')
+    let slideCurrent = event.target.closest('.projects__img').querySelector('.projects-img__slider').querySelector('.slide-active')
+    let slideNumber = slideCurrent.dataset.slide
+    let slideNew
+
+    if ((btn === 'projects-img__prev') && (slideNumber > 1)) {
+        slideNew = parseInt(slideNumber) - 1
+    } else if ((btn === 'projects-img__next') && (slideNumber < sliderElements.length)) {
+        slideNew = parseInt(slideNumber) + 1
+    }
+
+    if (slideNew) {
+        slideCurrent.classList.remove('slide-active')
+
+        sliderElements.forEach(el => {
+            if (el.dataset.slide === slideNew.toString()) {
+                el.classList.add('slide-active')
+                btnNumber.textContent = slideNew.toString()
+            }
+        })
+    }
+}

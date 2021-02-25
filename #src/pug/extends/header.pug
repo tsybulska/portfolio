@@ -6,15 +6,20 @@ header.header
         .hero__wrapper
             h1 Hello! I'm Olena Tsybulska
             .hero__icons
-                .tooltip
-                    a(href='https://github.com/tsybulska' aria-label='Github' target='_blank' rel='nofollow noopener').hero__icon
-                        svg
-                            use(xlink:href='./assets/icons/sprite.svg#github')
-                        span.tooltip-text open code
                 #theme-btn.theme-btn.hero__icon.tooltip
-                    svg
-                        use(xlink:href='./assets/icons/sprite.svg#settings-alt')
+                    svg.hero__theme
+                        use(xlink:href='./assets/icons/sprite.svg#brightness')
                     span.tooltip-text switch theme
+                .tooltip
+                    a(href='https://t.me/oltsybulska' aria-label='Telegram' target='_blank' rel='nofollow noopener').hero__icon
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#telegram')
+                        span.tooltip-text telegram
+                .tooltip
+                    a(href='#' aria-label='Language' target='_blank' rel='nofollow noopener').hero__icon
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#world')
+                        span.tooltip-text русский язык
     nav#nav.nav
         .nav__icon
             span
@@ -24,8 +29,8 @@ header.header
             a(href='#hero').logo Tsybulska
             ul.nav__body
                 li
+                    a(href='#contacts') Contacts
+                li
                     a(href='#projects') Projects
                 li
                     a(href='#stack') Stack
-                li
-                    a(href='#contacts') Contacts

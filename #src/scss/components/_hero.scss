@@ -23,24 +23,24 @@
 
     &__icons {
         margin-top: 30px;
+    }
 
-        .hero__icon {
-            display: inline-block;
-            height: 60px;
-            width: 60px;
-            margin: 0 10px;
-            cursor: pointer;
+    &__icon {
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        margin: 0 10px;
+        cursor: pointer;
 
-            svg {
-                height: 100%;
-                width: 100%;
-                fill: $color-text1;
-                transition: fill 0.3s ease-in-out;
+        svg {
+            height: 100%;
+            width: 100%;
+            fill: $color-text1;
+            transition: fill 0.3s ease-in-out;
 
-                &:focus,
-                &:hover {
-                    fill: $color-secondary;
-                }
+            &:focus,
+            &:hover {
+                fill: $color-secondary;
             }
         }
     }
