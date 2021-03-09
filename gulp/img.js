@@ -10,7 +10,7 @@ module.exports = function img() {
         .pipe(imagemin([
             imagemin.gifsicle({ interlaced: true }),
             imagemin.mozjpeg({
-                quality: 85,
+                quality: 90,
                 progressive: true
             }),
             imagemin.optipng({ optimizationLevel: 5 }), // 0 to 7
@@ -36,7 +36,7 @@ module.exports = function img() {
         ]))
         .pipe(gulp.dest('./dist/assets/img/'))
     return gulp.src('./#src/assets/img/*.{jpg,png}')
-        .pipe(imagemin([imageminWebp({ quality: 75 })]))
+        .pipe(imagemin([imageminWebp({ quality: 85 })]))
         .pipe(rename({ extname: '.webp' }))
         .pipe(gulp.dest('./dist/assets/img/'))
         .pipe(rezzy([ // 960, 1280

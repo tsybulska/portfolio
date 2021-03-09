@@ -18,66 +18,36 @@ section#projects.projects
         li
             label(for='Build') Build
     ul.projects__list
-        li.projects__item(data-category='JavaScript' data-name='js-filter-calculator')
-            .projects__img.projects-img
-                .projects-img__slider
-                    .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
-                        picture
-                            source(class='lazyload' data-srcset='./assets/img/js-filter-calculator.webp, ./assets/img/js-filter-calculator-640.webp 640w' type='image/webp')
-                            img(class='lazyload' data-src='./assets/img/js-filter-calculator.jpg' data-srcset='./assets/img/js-filter-calculator.jpg, ./assets/img/js-filter-calculator-640.jpg 640w' alt='project')
-                    .projects-img__slide(data-slide='2')
-                        picture
-                            source(class='lazyload' data-srcset='./assets/img/js-filter-calculator.webp, ./assets/img/js-filter-calculator-640.webp 640w' type='image/webp')
-                            img(class='lazyload' data-src='./assets/img/js-filter-calculator.jpg' data-srcset='./assets/img/js-filter-calculator.jpg, ./assets/img/js-filter-calculator-640.jpg 640w' alt='project')
-                    .projects-img__slide(data-slide='3')
-                        picture
-                            source(class='lazyload' data-srcset='./assets/img/js-filter-calculator.webp, ./assets/img/js-filter-calculator-640.webp 640w' type='image/webp')
-                            img(class='lazyload' data-src='./assets/img/js-filter-calculator.jpg' data-srcset='./assets/img/js-filter-calculator.jpg, ./assets/img/js-filter-calculator-640.jpg 640w' alt='project')
-                .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
-                        span 1
-                        |  / 3
-                    a.projects-img__next &#x276F
-            .projects__about.projects-about
-                .projects-about__header
-                    h3
-                        span &lt;
-                        |   JavaScript Filter Calculator  
-                        span /&gt;
-                .projects-about__text
-                    h4 Stack
-                    ul
-                        li HTML5/Pug, CSS3/SCSS/BEM, SVG Sprite
-                        li JavaScript, Gulp
-                        li Responsiveness, Crossbrowser Compability
-                        li Page Speed Optimization
-                    h4 Details
-                    p Filter and calculator for a steam game
-                    p Every object has name and 3 different evidences to recognize it. The player can choose up to three evidences or exclude them. There is a stub if trying to select more than three. Also highlighting input in the calculator itself with different colors
-                    p Based on the input, the filter displays a list of possible objects and possible missing evidences
-                    p There are a reset button, two languages, dark | light themes and a phrases list
-                .projects-about__btn
-                    a(href='./assets/projects/js-filter-calculator/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Live
-                    a(href='./assets/img/js-filter-calculator.jpg' aria-label='Expand' target='_blank' rel='nofollow noopener').btn.btn-expand
-                        svg
-                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
-                    a(href='https://github.com/tsybulska/js-filter-calculator' target='_blank' rel='nofollow noopener').btn.btn-code Code
         li.projects__item(data-category='HTML JavaScript' data-name='kunzhut')
             .projects__img.projects-img
+                .projects-img__icon
                 .projects-img__slider
-                    .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
-                            source(class='lazyload' data-srcset='./assets/img/kunzhut.webp, ./assets/img/kunzhut-640.webp 640w' type='image/webp')
-                            img(class='lazyload' data-src='./assets/img/kunzhut.jpg' data-srcset='./assets/img/kunzhut.jpg, ./assets/img/kunzhut-640.jpg 640w' alt='project')
+                            source(class='lazyload' data-srcset='./assets/img/kunzhut1.webp, ./assets/img/kunzhut1-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/kunzhut1.jpg' data-srcset='./assets/img/kunzhut1.jpg, ./assets/img/kunzhut1-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/kunzhut2.webp, ./assets/img/kunzhut2-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/kunzhut2.jpg' data-srcset='./assets/img/kunzhut2.jpg, ./assets/img/kunzhut2-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/kunzhut3.webp, ./assets/img/kunzhut3-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/kunzhut3.jpg' data-srcset='./assets/img/kunzhut3.jpg, ./assets/img/kunzhut3-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/kunzhut4.webp, ./assets/img/kunzhut4-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/kunzhut4.jpg' data-srcset='./assets/img/kunzhut4.jpg, ./assets/img/kunzhut4-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/kunzhut5.webp, ./assets/img/kunzhut5-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/kunzhut5.jpg' data-srcset='./assets/img/kunzhut5.jpg, ./assets/img/kunzhut5-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 5
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -93,28 +63,44 @@ section#projects.projects
                         li Page Speed Optimization
                     h4 Details
                     p Development of 2 JS calculators and 4 responsive pages from .psd layouts for a cafe
-                    p In 1st calculator clicking on the ingredients or sauces appears their photos on the pizza, elements highlighted in color and the price appears. Remove if clicked again
-                    p In 2nd calculator different pizza halves add up to a whole. When click on the icon, the half appears on the pizza. You can select one on the right and one on the left sides. Remove if clicked again
+                    p Ingredient pizza constructor. In this calculator clicking on the ingredients or sauces appears their photos on the pizza, elements highlighted in color and the price appears. Remove if clicked again
+                    p Constructor from different pizza halves. In this calculator different pizza halves add up to a whole. When click on the icon, the half appears on the pizza. You can select one on the right and one on the left sides. Remove if clicked again
                     p There is a message above the pizza telling you to choose a half. When both halves are selected, the message disappears and reappears if the half is deselected
                 .projects-about__btn
                     a(href='./assets/projects/kunzhut/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Live
-                    a(href='./assets/img/kunzhut.jpg' aria-label='Expand' target='_blank' rel='nofollow noopener').btn.btn-expand
+                    a.btn.btn-expand
                         svg
                             use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
         li.projects__item(data-category='HTML JavaScript' data-name='city-mober')
             .projects__img.projects-img
                 .projects-img__slider
                     .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
-                            source(class='lazyload' data-srcset='./assets/img/city-mober.webp, ./assets/img/city-mober-640.webp 640w' type='image/webp')
-                            img(class='lazyload' data-src='./assets/img/city-mober.jpg' data-srcset='./assets/img/city-mober.jpg, ./assets/img/city-mober-640.jpg 640w' alt='project')
+                            source(class='lazyload' data-srcset='./assets/img/city-mober1.webp, ./assets/img/city-mober1-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/city-mober1.jpg' data-srcset='./assets/img/city-mober1.jpg, ./assets/img/city-mober1-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/city-mober2.webp, ./assets/img/city-mober2-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/city-mober2.jpg' data-srcset='./assets/img/city-mober2.jpg, ./assets/img/city-mober2-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/city-mober3.webp, ./assets/img/city-mober3-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/city-mober3.jpg' data-srcset='./assets/img/city-mober3.jpg, ./assets/img/city-mober3-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/city-mober4.webp, ./assets/img/city-mober4-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/city-mober4.jpg' data-srcset='./assets/img/city-mober4.jpg, ./assets/img/city-mober4-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/city-mober5.webp, ./assets/img/city-mober5-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/city-mober5.jpg' data-srcset='./assets/img/city-mober5.jpg, ./assets/img/city-mober5-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 5
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -129,29 +115,31 @@ section#projects.projects
                         li Responsiveness, Crossbrowser Compability
                         li Page Speed Optimization
                     h4 Details
-                    p Responsive layout, interactive elements
+                    p Responsive layout for cms, interactive elements
+                    p SVG mask for photos (cutting out lines in the photo programmatically, when replacing pictures with new ones, they will also be cut out) in the Instagram block
                     p Adding new fields if clicking on order another bag button
                     p Scrolling if clicking on the buttons in the instagram block
                     p In mobile and tablet versions long blocks are collapsed and added percentage of viewed
+                    p Smooth scrolling to blocks, back to top button
                 .projects-about__btn
-                    a(href='./assets/projects/city-mober/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Live
-                    a(href='./assets/img/city-mober.jpg' aria-label='Expand' target='_blank' rel='nofollow noopener').btn.btn-expand
+                    a(href='https://citymober.ru/' target='_blank' rel='nofollow noopener').btn.btn-open Live
+                    a.btn.btn-expand
                         svg
                             use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
         li.projects__item(data-category='HTML' data-name='website-gosurf')
             .projects__img.projects-img
                 .projects-img__slider
                     .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
                             source(class='lazyload' data-srcset='./assets/img/website-gosurf.webp, ./assets/img/website-gosurf-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/website-gosurf.jpg' data-srcset='./assets/img/website-gosurf.jpg, ./assets/img/website-gosurf-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 1
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -166,31 +154,77 @@ section#projects.projects
                         li JavaScript, Gulp
                         li Responsiveness, Crossbrowser Compability
                     h4 Details
-                    p Animation, actual date, choose options in surf section
-                    p Nights calculator in sleep section
-                    p Hints in shop section
-                    p Carousel
+                    p Animation of the appearance of blocks / titles / points on the map, actual date, choose options in surf section
+                    p Night cost calculator depending on the number of people and nights
+                    p Tooltips in shop section
+                    p Slider
                     p Backtop button, preloader
                 .projects-about__btn
                     a(href='./assets/projects/website-gosurf/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Live
-                    a(href='./assets/img/website-gosurf.jpg' aria-label='Expand' target='_blank' rel='nofollow noopener').btn.btn-expand
+                    a.btn.btn-expand
                         svg
                             use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
                     a(href='https://github.com/tsybulska/website-gosurf' target='_blank' rel='nofollow noopener').btn.btn-code Code
+        li.projects__item(data-category='JavaScript' data-name='js-filter-calculator')
+            .projects__img.projects-img
+                .projects-img__icon
+                .projects-img__slider
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/js-filter-calculator1.webp, ./assets/img/js-filter-calculator1-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/js-filter-calculator1.jpg' data-srcset='./assets/img/js-filter-calculator1.jpg, ./assets/img/js-filter-calculator1-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/js-filter-calculator2.webp, ./assets/img/js-filter-calculator2-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/js-filter-calculator2.jpg' data-srcset='./assets/img/js-filter-calculator2.jpg, ./assets/img/js-filter-calculator2-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/js-filter-calculator3.webp, ./assets/img/js-filter-calculator3-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/js-filter-calculator3.jpg' data-srcset='./assets/img/js-filter-calculator3.jpg, ./assets/img/js-filter-calculator3-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
+                        span 1
+                        |  ... 3
+                    button.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |   JavaScript Filter Calculator  
+                        span /&gt;
+                .projects-about__text
+                    h4 Stack
+                    ul
+                        li HTML5/Pug, CSS3/SCSS/BEM, SVG Sprite
+                        li JavaScript, Gulp
+                        li Responsiveness, Crossbrowser Compability
+                        li Page Speed Optimization
+                    h4 Details
+                    p Filter and calculator for a Steam game
+                    p Every object has name and 3 different evidences to recognize it. The player can choose up to three evidences or exclude them. There is a stub if trying to select more than three. Also highlighting input in the calculator itself with different colors
+                    p Based on the input, the filter displays a list of possible objects and possible missing evidences
+                    p There are a reset button, two languages, dark | light themes and a phrases list
+                .projects-about__btn
+                    a(href='./assets/projects/js-filter-calculator/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Live
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+                    a(href='https://github.com/tsybulska/js-filter-calculator' target='_blank' rel='nofollow noopener').btn.btn-code Code
         li.projects__item(data-category='HTML' data-name='website-mitravel')
             .projects__img.projects-img
                 .projects-img__slider
                     .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
                             source(class='lazyload' data-srcset='./assets/img/website-mitravel.webp, ./assets/img/website-mitravel-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/website-mitravel.jpg' data-srcset='./assets/img/website-mitravel.jpg, ./assets/img/website-mitravel-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 1
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -200,20 +234,20 @@ section#projects.projects
                 .projects-about__text
                     h4 Stack
                     ul
-                        li Sending a request by mail with PHPMailer in sign up forms
-                        li Play and stop video
+                        li Sending a request by mail with PHPMailer
                         li Swiper carousel
                         li HTML5/Pug, CSS3/SCSS/BEM, SVG Sprite
                         li JavaScript, Gulp
                         li Responsiveness, Crossbrowser Compability
                     h4 Details
                     p Sign up form
+                    p Sending a request by mail
                     p Play and stop video in head section
-                    p Gallery, carousel
+                    p Gallery, slider
                     p Backtop button, preloader
                 .projects-about__btn
                     a(href='./assets/projects/website-mitravel/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Live
-                    a(href='./assets/img/website-mitravel.jpg' aria-label='Expand' target='_blank' rel='nofollow noopener').btn.btn-expand
+                    a.btn.btn-expand
                         svg
                             use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
                     a(href='https://github.com/tsybulska/website-mitravel' target='_blank' rel='nofollow noopener').btn.btn-code Code
@@ -221,16 +255,16 @@ section#projects.projects
             .projects__img.projects-img
                 .projects-img__slider
                     .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
                             source(class='lazyload' data-srcset='./assets/img/website-mogo.webp, ./assets/img/website-mogo-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/website-mogo.jpg' data-srcset='./assets/img/website-mogo.jpg, ./assets/img/website-mogo-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 1
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -251,7 +285,7 @@ section#projects.projects
                     p Backtop button, preloader
                 .projects-about__btn
                     a(href='./assets/projects/website-mogo/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Live
-                    a(href='./assets/img/website-mogo.jpg' aria-label='Expand' target='_blank' rel='nofollow noopener').btn.btn-expand
+                    a.btn.btn-expand
                         svg
                             use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
                     a(href='https://github.com/tsybulska/website-mogo' target='_blank' rel='nofollow noopener').btn.btn-code Code
@@ -259,21 +293,21 @@ section#projects.projects
             .projects__img.projects-img
                 .projects-img__slider
                     .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
                             source(class='lazyload' data-srcset='./assets/img/survey-form.webp, ./assets/img/survey-form-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/survey-form.jpg' data-srcset='./assets/img/survey-form.jpg, ./assets/img/survey-form-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 1
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
                         span &lt;
-                        |  Form Survey  
+                        |  PSD2HTML Form Survey  
                         span /&gt;
                 .projects-about__text
                     h4 Stack
@@ -282,10 +316,12 @@ section#projects.projects
                         li JavaScript, Gulp
                         li Responsiveness, Crossbrowser Compability
                     h4 Details
-                    p Input name, email, age, select dropdown options, select checkboxes, submit button
+                    p Input name, email, age
+                    p Select dropdown options, select checkboxes
+                    p Submit button
                 .projects-about__btn
                     a(href='./assets/projects/survey-form/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Live
-                    a(href='./assets/img/survey-form.jpg' aria-label='Expand' target='_blank' rel='nofollow noopener').btn.btn-expand
+                    a.btn.btn-expand
                         svg
                             use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
                     a(href='https://github.com/tsybulska/survey-form' target='_blank' rel='nofollow noopener').btn.btn-code Code
@@ -293,16 +329,16 @@ section#projects.projects
             .projects__img.projects-img
                 .projects-img__slider
                     .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
                             source(class='lazyload' data-srcset='./assets/img/email.webp, ./assets/img/email-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/email.jpg' data-srcset='./assets/img/email.jpg, ./assets/img/email-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 1
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -317,7 +353,7 @@ section#projects.projects
                     p Hero, text, button, social section
                 .projects-about__btn
                     a(href='./assets/projects/email/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Live
-                    a(href='./assets/img/email.jpg' aria-label='Expand' target='_blank' rel='nofollow noopener').btn.btn-expand
+                    a.btn.btn-expand
                         svg
                             use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
                     a(href='https://github.com/tsybulska/email' target='_blank' rel='nofollow noopener').btn.btn-code Code
@@ -325,16 +361,16 @@ section#projects.projects
             .projects__img.projects-img
                 .projects-img__slider
                     .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
                             source(class='lazyload' data-srcset='./assets/img/js-game-squares.webp, ./assets/img/js-game-squares-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/js-game-squares.jpg' data-srcset='./assets/img/js-game-squares.jpg, ./assets/img/js-game-squares-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 1
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -355,7 +391,7 @@ section#projects.projects
                     p Protection of the window from changes after the end of the game, protection of the input after start of the game
                 .projects-about__btn
                     a(href='./assets/projects/js-game-squares/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Live
-                    a(href='./assets/img/js-game-squares.jpg' aria-label='Expand' target='_blank' rel='nofollow noopener').btn.btn-expand
+                    a.btn.btn-expand
                         svg
                             use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
                     a(href='https://github.com/tsybulska/js-game-squares' target='_blank' rel='nofollow noopener').btn.btn-code Code
@@ -363,16 +399,16 @@ section#projects.projects
             .projects__img.projects-img
                 .projects-img__slider
                     .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
                             source(class='lazyload' data-srcset='./assets/img/js-game-fighter.webp, ./assets/img/js-game-fighter-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/js-game-fighter.jpg' data-srcset='./assets/img/js-game-fighter.jpg, ./assets/img/js-game-fighter-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 1
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -393,7 +429,7 @@ section#projects.projects
                     p Battle log generated via JS, displays the winner if the fighter's health drops below 0
                 .projects-about__btn
                     a(href='./assets/projects/js-game-fighter/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Live
-                    a(href='./assets/img/js-game-fighter.jpg' aria-label='Expand' target='_blank' rel='nofollow noopener').btn.btn-expand
+                    a.btn.btn-expand
                         svg
                             use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
                     a(href='https://github.com/tsybulska/js-game-fighter' target='_blank' rel='nofollow noopener').btn.btn-code Code
@@ -401,16 +437,16 @@ section#projects.projects
             .projects__img.projects-img
                 .projects-img__slider
                     .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
                             source(class='lazyload' data-srcset='./assets/img/reactjs-todo.webp, ./assets/img/reactjs-todo-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/reactjs-todo.jpg' data-srcset='./assets/img/reactjs-todo.jpg, ./assets/img/reactjs-todo-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 1
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -430,7 +466,7 @@ section#projects.projects
                     p React.Fragment Modal
                 .projects-about__btn
                     a(href='https://tsybulska.github.io/reactjs-todo/' target='_blank' rel='nofollow noopener').btn.btn-open Live
-                    a(href='./assets/img/reactjs-todo.jpg' aria-label='Expand' target='_blank' rel='nofollow noopener').btn.btn-expand
+                    a.btn.btn-expand
                         svg
                             use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
                     a(href='https://github.com/tsybulska/reactjs-todo' target='_blank' rel='nofollow noopener').btn.btn-code Code
@@ -438,16 +474,16 @@ section#projects.projects
             .projects__img.projects-img
                 .projects-img__slider
                     .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
                             source(class='lazyload' data-srcset='./assets/img/gulp-build.webp, ./assets/img/gulp-build-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/gulp-build.jpg' data-srcset='./assets/img/gulp-build.jpg, ./assets/img/gulp-build-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 1
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -486,16 +522,16 @@ section#projects.projects
             .projects__img.projects-img
                 .projects-img__slider
                     .projects-img__icon
-                    .projects-img__slide(data-slide='1').slide-active
+                    .projects-img__slide.slide-active
                         picture
                             source(class='lazyload' data-srcset='./assets/img/gulp-build.webp, ./assets/img/gulp-build-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/gulp-build.jpg' data-srcset='./assets/img/gulp-build.jpg, ./assets/img/gulp-build-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    span.projects-img__num
                         span 1
-                        |  / 1
-                    a.projects-img__next &#x276F
+                        |  ... 1
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3

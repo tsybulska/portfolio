@@ -1,0 +1,549 @@
+section#projects.projects
+    h2
+        span Проекты
+    input#All(type='radio' name='categories' value='All' checked='')
+    input#HTML(type='radio' name='categories' value='HTML')
+    input#JavaScript(type='radio' name='categories' value='JavaScript')
+    input#ReactJS(type='radio' name='categories' value='ReactJS')
+    input#Build(type='radio' name='categories' value='Build')
+    ul.projects__label
+        li.projects__all
+            label(for='All') All
+        li
+            label(for='HTML') HTML
+        li
+            label(for='JavaScript') JavaScript
+        li
+            label(for='ReactJS') ReactJS
+        li
+            label(for='Build') Build
+    ul.projects__list
+        li.projects__item(data-category='HTML JavaScript' data-name='kunzhut')
+            .projects__img.projects-img
+                .projects-img__icon
+                .projects-img__slider
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/kunzhut1.webp, ./assets/img/kunzhut1-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/kunzhut1.jpg' data-srcset='./assets/img/kunzhut1.jpg, ./assets/img/kunzhut1-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/kunzhut2.webp, ./assets/img/kunzhut2-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/kunzhut2.jpg' data-srcset='./assets/img/kunzhut2.jpg, ./assets/img/kunzhut2-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/kunzhut3.webp, ./assets/img/kunzhut3-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/kunzhut3.jpg' data-srcset='./assets/img/kunzhut3.jpg, ./assets/img/kunzhut3-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/kunzhut4.webp, ./assets/img/kunzhut4-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/kunzhut4.jpg' data-srcset='./assets/img/kunzhut4.jpg, ./assets/img/kunzhut4-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/kunzhut5.webp, ./assets/img/kunzhut5-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/kunzhut5.jpg' data-srcset='./assets/img/kunzhut5.jpg, ./assets/img/kunzhut5-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 5
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |   Адаптивная Верстка Кунжут  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
+                        li JavaScript, Gulp
+                        li Адаптивность, Кроссбраузерность
+                        li Оптимизация Скорости Страницы
+                    h4 Подробнее
+                    p Разработка 2х js калькуляторов и верстка 4х адаптивных страниц из .psd макетов для пиццерии
+                    p Конструктор пиццы из ингридиентов. В этом калькуляторе при нажатии на ингридиенты/соусы их фото появляются на пицце, подсвечиваются цветом и появляется цена. При повторном нажатии убираются
+                    p Конструктор из разных половинок пиццы. В этом калькуляторе из разных половинок пиццы складывается целая. При клике на иконку половинка появляется на фото пиццы. Можно выбрать по одной с правой и левой стороны, при повторном клике выбор отменяется
+                    p Над пиццей есть сообщение о том, что нужно выбрать половину. Когда выбрано обе половины, сообщение исчезает и появляется заново при отмене выбора половинки
+                .projects-about__btn
+                    a(href='./assets/projects/kunzhut/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+        li.projects__item(data-category='HTML JavaScript' data-name='city-mober')
+            .projects__img.projects-img
+                .projects-img__slider
+                    .projects-img__icon
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/city-mober1.webp, ./assets/img/city-mober1-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/city-mober1.jpg' data-srcset='./assets/img/city-mober1.jpg, ./assets/img/city-mober1-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/city-mober2.webp, ./assets/img/city-mober2-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/city-mober2.jpg' data-srcset='./assets/img/city-mober2.jpg, ./assets/img/city-mober2-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/city-mober3.webp, ./assets/img/city-mober3-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/city-mober3.jpg' data-srcset='./assets/img/city-mober3.jpg, ./assets/img/city-mober3-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/city-mober4.webp, ./assets/img/city-mober4-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/city-mober4.jpg' data-srcset='./assets/img/city-mober4.jpg, ./assets/img/city-mober4-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/city-mober5.webp, ./assets/img/city-mober5-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/city-mober5.jpg' data-srcset='./assets/img/city-mober5.jpg, ./assets/img/city-mober5-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 5
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |   Адаптивная Верстка City Mober  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
+                        li JavaScript, Gulp
+                        li Адаптивность, Кроссбраузерность
+                        li Оптимизация Скорости Страницы
+                    h4 Подробнее
+                    p Адаптивная верстка для последующей натяжки на cms, интерактивные элементы
+                    p SVG маска для фотографий (вырезка линий на фото программно, при замене картинок на новые они так же будут вырезаны) в блоке инстаграмма
+                    p Добавление новых полей при нажатии на кнопку заказа еще одной сумки
+                    p Прокрутка при нажатии на кнопки в блоке инстаграмма
+                    p В мобильной и планшетной версиях длинные блоки сворачиваются и считается процент просмотренного
+                    p Плавная прокрутка к блокам, кнопка вернуться наверх
+                .projects-about__btn
+                    a(href='https://citymober.ru/' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+        li.projects__item(data-category='HTML' data-name='website-gosurf')
+            .projects__img.projects-img
+                .projects-img__slider
+                    .projects-img__icon
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/website-gosurf.webp, ./assets/img/website-gosurf-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/website-gosurf.jpg' data-srcset='./assets/img/website-gosurf.jpg, ./assets/img/website-gosurf-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 1
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |   Адаптивная Верстка GoSurf  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li Slick Carousel
+                        li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
+                        li JavaScript, Gulp
+                        li Адаптивность, Кроссбраузерность
+                    h4 Подробнее
+                    p Анимация появления блоков / заголовков / точек на карте, сегодняшняя дата, choose options in surf section
+                    p Калькулятор стоимости ночевки в зависимости от количества человек и ночей
+                    p Всплывающие подсказки в разделе магазин
+                    p Слайдер
+                    p Кнопка возврата наверх, прелоадер
+                .projects-about__btn
+                    a(href='./assets/projects/website-gosurf/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+                    a(href='https://github.com/tsybulska/website-gosurf' target='_blank' rel='nofollow noopener').btn.btn-code Код
+        li.projects__item(data-category='JavaScript' data-name='js-filter-calculator')
+            .projects__img.projects-img
+                .projects-img__icon
+                .projects-img__slider
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/js-filter-calculator1.webp, ./assets/img/js-filter-calculator1-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/js-filter-calculator1.jpg' data-srcset='./assets/img/js-filter-calculator1.jpg, ./assets/img/js-filter-calculator1-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/js-filter-calculator2.webp, ./assets/img/js-filter-calculator2-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/js-filter-calculator2.jpg' data-srcset='./assets/img/js-filter-calculator2.jpg, ./assets/img/js-filter-calculator2-640.jpg 640w' alt='project')
+                    .projects-img__slide
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/js-filter-calculator3.webp, ./assets/img/js-filter-calculator3-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/js-filter-calculator3.jpg' data-srcset='./assets/img/js-filter-calculator3.jpg, ./assets/img/js-filter-calculator3-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 3
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |   Разработка Калькулятора и Адаптивная Верстка  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
+                        li JavaScript, Gulp
+                        li Адаптивность, Кроссбраузерность
+                        li Оптимизация Скорости Страницы
+                    h4 Подробнее
+                    p Фильтр и калькулятор для Steam игры
+                    p У каждого объекта есть имя и 3 разных свидетельства, позволяющих его распознать. Игрок может выбрать до трех доказательств или исключить их, нажимая на иконку креста. При попытке выбрать больше трех появляется заглушка. Выбранные доказательства выделяются разными цветами
+                    p На основе входных данных фильтр отображает список возможных объектов и возможных недостающих свидетельств
+                    p Есть кнопка сброса, два языка, тёмная и светлые темы, список фраз с фильтром
+                .projects-about__btn
+                    a(href='./assets/projects/js-filter-calculator/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+                    a(href='https://github.com/tsybulska/js-filter-calculator' target='_blank' rel='nofollow noopener').btn.btn-code Код
+        li.projects__item(data-category='HTML' data-name='website-mitravel')
+            .projects__img.projects-img
+                .projects-img__slider
+                    .projects-img__icon
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/website-mitravel.webp, ./assets/img/website-mitravel-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/website-mitravel.jpg' data-srcset='./assets/img/website-mitravel.jpg, ./assets/img/website-mitravel-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 1
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |   Адаптивная Верстка Mitravel  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li Отправка заяки на почту с помощью PHPMailer
+                        li Swiper carousel
+                        li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
+                        li JavaScript, Gulp
+                        li Адаптивность, Кроссбраузерность
+                    h4 Подробнее
+                    p Формы подписки
+                    p Отправка заяки на почту
+                    p Проигрывание и остановка видео в главной секции
+                    p Галерея, слайдер
+                    p Кнопка возврата вверх, прелоадер
+                .projects-about__btn
+                    a(href='./assets/projects/website-mitravel/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+                    a(href='https://github.com/tsybulska/website-mitravel' target='_blank' rel='nofollow noopener').btn.btn-code Код
+        li.projects__item(data-category='HTML' data-name='website-mogo')
+            .projects__img.projects-img
+                .projects-img__slider
+                    .projects-img__icon
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/website-mogo.webp, ./assets/img/website-mogo-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/website-mogo.jpg' data-srcset='./assets/img/website-mogo.jpg, ./assets/img/website-mogo-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 1
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |   Адаптивная Верстка MoGo  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li Bootstrap4.5
+                        li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
+                        li jQuery, Gulp
+                        li Адаптивность, Кроссбраузерность
+                    h4 Подробнее
+                    p Слайдер, модальное окно, аккордеон
+                    p Иконки при наведении на изображения
+                    p Анимация статистики
+                    p Кнопка возврата вверх, прелоадер
+                .projects-about__btn
+                    a(href='./assets/projects/website-mogo/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+                    a(href='https://github.com/tsybulska/website-mogo' target='_blank' rel='nofollow noopener').btn.btn-code Код
+        li.projects__item(data-category='HTML' data-name='survey-form')
+            .projects__img.projects-img
+                .projects-img__slider
+                    .projects-img__icon
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/survey-form.webp, ./assets/img/survey-form-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/survey-form.jpg' data-srcset='./assets/img/survey-form.jpg, ./assets/img/survey-form-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 1
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |  Адаптивная Верстка Формы-опроса  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
+                        li JavaScript, Gulp
+                        li Адаптивность, Кроссбраузерность
+                    h4 Подробнее
+                    p Поля имя, адрес электронной почты, возраст
+                    p Выбор параметров раскрывающегося списка, установка флажков
+                    p Кнопка отправки
+                .projects-about__btn
+                    a(href='./assets/projects/survey-form/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+                    a(href='https://github.com/tsybulska/survey-form' target='_blank' rel='nofollow noopener').btn.btn-code Код
+        li.projects__item(data-category='HTML' data-name='email')
+            .projects__img.projects-img
+                .projects-img__slider
+                    .projects-img__icon
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/email.webp, ./assets/img/email-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/email.jpg' data-srcset='./assets/img/email.jpg, ./assets/img/email-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 1
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |  Адаптивная Верстка Письма  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li HTML5, CSS3
+                    h4 Подробнее
+                    p Логотип, текст, кнопка, ссылки на социальные сети
+                .projects-about__btn
+                    a(href='./assets/projects/email/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+                    a(href='https://github.com/tsybulska/email' target='_blank' rel='nofollow noopener').btn.btn-code Код
+        li.projects__item(data-category='JavaScript' data-name='js-game-squares')
+            .projects__img.projects-img
+                .projects-img__slider
+                    .projects-img__icon
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/js-game-squares.webp, ./assets/img/js-game-squares-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/js-game-squares.jpg' data-srcset='./assets/img/js-game-squares.jpg, ./assets/img/js-game-squares-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 1
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |  Разработка Игры Квадраты  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
+                        li JavaScript, Gulp
+                        li Адаптивность, Кроссбраузерность
+                        li Оптимизация Скорости Страницы
+                    h4 Подробнее
+                    p Подсчет времени и очков
+                    p Ручная установка времени
+                    p Случайные цвета квадратов
+                    p Защита окна от изменений после окончания игры, защита окна времени после начала игры
+                .projects-about__btn
+                    a(href='./assets/projects/js-game-squares/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+                    a(href='https://github.com/tsybulska/js-game-squares' target='_blank' rel='nofollow noopener').btn.btn-code Код
+        li.projects__item(data-category='JavaScript' data-name='js-game-fighter')
+            .projects__img.projects-img
+                .projects-img__slider
+                    .projects-img__icon
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/js-game-fighter.webp, ./assets/img/js-game-fighter-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/js-game-fighter.jpg' data-srcset='./assets/img/js-game-fighter.jpg, ./assets/img/js-game-fighter-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 1
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |   Разработка Игры Бой  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
+                        li JavaScript, Gulp
+                        li Адаптивность, Кроссбраузерность
+                        li Оптимизация Скорости Страницы
+                    h4 Подробнее
+                    p ES6 классы и контекст this
+                    p У двух бойцов есть свои характеристики, отображаемые через JS
+                    p Кнопка запуска запускает счет и бой, формулы рассчитывают шанс атаки или промаха
+                    p Журнал боя создан с помощью JS, отображает победителя когда здоровье бойца падает ниже 0
+                .projects-about__btn
+                    a(href='./assets/projects/js-game-fighter/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+                    a(href='https://github.com/tsybulska/js-game-fighter' target='_blank' rel='nofollow noopener').btn.btn-code Код
+        li.projects__item(data-category='ReactJS' data-name='reactjs-todo')
+            .projects__img.projects-img
+                .projects-img__slider
+                    .projects-img__icon
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/reactjs-todo.webp, ./assets/img/reactjs-todo-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/reactjs-todo.jpg' data-srcset='./assets/img/reactjs-todo.jpg, ./assets/img/reactjs-todo-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 1
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |  ReactJS Список Дел  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li HTML5/Pug, CSS3/SCSS/БЭМ
+                        li React JS, Webpack
+                        li Адаптивность, Кроссбраузерность
+                    h4 Подробнее
+                    p AddTodo, removeTodo, React.Suspense (React.lazy) AddTodo
+                    p UseContext, custom hook useInputValue, useEffect
+                    p Loader
+                    p React.Fragment Modal
+                .projects-about__btn
+                    a(href='https://tsybulska.github.io/reactjs-todo/' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a.btn.btn-expand
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#arrows-fullscreen')
+                    a(href='https://github.com/tsybulska/reactjs-todo' target='_blank' rel='nofollow noopener').btn.btn-code Код
+        li.projects__item(data-category='Build' data-name='gulp-build')
+            .projects__img.projects-img
+                .projects-img__slider
+                    .projects-img__icon
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/gulp-build.webp, ./assets/img/gulp-build-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/gulp-build.jpg' data-srcset='./assets/img/gulp-build.jpg, ./assets/img/gulp-build-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 1
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |  Gulp Сборщик  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li clean.js — Clean folder
+                        li pug2html.js — Pug to HTML, pug linter, html validator, bem validator
+                        li styles.js — SCSS to CSS, webpcss, group css media, stylelint, sourcemaps, autoprefixer, csso, rename to min
+                        li scripts.js — Scripts, concat to one file scripts.js and libs, eslint.format, sourcemaps, babel, terser, rename to min
+                        li fonts.js — Fonts, copy woff2 and woff, other convert to woff2 and woff
+                        li img.js — Images, optimize (quality 85) and copy images, convert to webp and resize
+                        li svgСпрайтs.js — SVG sprites, optimize, make sprite and template to /dist/assets/icons/
+                        li copyDependencies.js — Copy dependencies, template if dont want to concat libs with scripts.js
+                        li favicon.js — Favicon, create from svg icon
+                        li favicon2html.js — Favicon to HTML, add favicon links to HTML head
+                        li fontsStyle.js — Fonts style, write info about fonts to /#src/scss/_fonts.scss
+                        li serve.js — Просмотр server, watching
+                    h4 Подробнее
+                    ul
+                        li Made my own Build
+                        li Resize mobile or tablet images, retina 1x, 2x, 3x via gulp task and use with picture tag
+                        li Automaticly create svg sprite by adding svg icons to /#src/assets/icons/, svg support ie
+                        li Automaticly create favicon by adding the svg icon to /#src/assets/favicon/
+                        li Convert fonts to woff2 and woff, copy them to /#src/assets/fonts/ and clean /#src/scss/_fonts.scss/ file
+                        li Two pug template pages with separate includes folders, common files in extends folder (layout, header, footer)
+                        li SCSS styles with separate components
+                        li Copy script libs via gulp task from /node_modules/ and copy them to scripts.js
+                .projects-about__btn
+                    a(href='./assets/projects/gulp-build/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a(href='https://github.com/tsybulska/gulp-build' target='_blank' rel='nofollow noopener').btn.btn-code Код and Readme
+        li.projects__item(data-category='Build' data-name='webpack-build')
+            .projects__img.projects-img
+                .projects-img__slider
+                    .projects-img__icon
+                    .projects-img__slide.slide-active
+                        picture
+                            source(class='lazyload' data-srcset='./assets/img/gulp-build.webp, ./assets/img/gulp-build-640.webp 640w' type='image/webp')
+                            img(class='lazyload' data-src='./assets/img/gulp-build.jpg' data-srcset='./assets/img/gulp-build.jpg, ./assets/img/gulp-build-640.jpg 640w' alt='project')
+                .projects-img__btn
+                    a.projects-img__prev &#x276E
+                    a.projects-img__num
+                        span 1
+                        |  ... 1
+                    a.projects-img__next &#x276F
+            .projects__about.projects-about
+                .projects-about__header
+                    h3
+                        span &lt;
+                        |  Webpack Сборщик  
+                        span /&gt;
+                .projects-about__text
+                    h4 Навыки
+                    ul
+                        li 
+                    h4 Подробнее
+                    p Made my own Build
+                .projects-about__btn
+                    a(href='#' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
+                    a(href='https://github.com/tsybulska/webpack-build' target='_blank' rel='nofollow noopener').btn.btn-code Код and Readme

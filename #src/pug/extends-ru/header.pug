@@ -1,0 +1,36 @@
+header.header
+    #stars1
+    #stars2
+    #stars3
+    #hero.hero
+        .hero__wrapper
+            h1 Привет! Я Елена Цыбульская
+            .hero__icons
+                #theme-btn.theme-btn.hero__icon.tooltip
+                    svg.hero__theme
+                        use(xlink:href='./assets/icons/sprite.svg#brightness')
+                    span.tooltip-text сменить тему
+                .tooltip
+                    a(href='https://t.me/oltsybulska' aria-label='Telegram' target='_blank' rel='nofollow noopener').hero__icon
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#telegram')
+                        span.tooltip-text телеграм
+                .tooltip
+                    a(href='./index.html' aria-label='Language' rel='nofollow noopener').hero__icon
+                        svg
+                            use(xlink:href='./assets/icons/sprite.svg#world')
+                        span.tooltip-text english
+    nav#nav.nav
+        .nav__icon
+            span
+            span
+            span
+        .nav__menu
+            a(href='#hero').logo Цыбульская
+            ul.nav__body
+                li
+                    a(href='#contacts') Контакты
+                li
+                    a(href='#projects') Проекты
+                li
+                    a(href='#stack') Навыки

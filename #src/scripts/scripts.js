@@ -130,26 +130,55 @@ document.querySelectorAll('.projects-img__btn').forEach(btn => {
 
 function projectsBtn(event) {
     let btn = event.target.closest('a').className
-    let btnNumber = event.target.closest('.projects__img').querySelector('.projects-img__num').querySelector('span')
-    let sliderElements = event.target.closest('.projects__img').querySelector('.projects-img__slider').querySelectorAll('.projects-img__slide')
-    let slideCurrent = event.target.closest('.projects__img').querySelector('.projects-img__slider').querySelector('.slide-active')
-    let slideNumber = slideCurrent.dataset.slide
-    let slideNew
+    let btnText = event.target.closest('.projects__img').querySelector('.projects-img__num').querySelector('span')
+    let slider = event.target.closest('.projects__img').querySelector('.projects-img__slider')
+    let sliderElements = slider.querySelectorAll('.projects-img__slide')
+    let slideCurrent = slider.querySelector('.slide-active')
 
+    let slideNumber
+    sliderElements.forEach(getSlideNumber)
+    
+    function getSlideNumber(el, index) {
+        if (el.classList.contains('slide-active')) slideNumber = index + 1
+    }
+
+    let slideNew
     if ((btn === 'projects-img__prev') && (slideNumber > 1)) {
-        slideNew = parseInt(slideNumber) - 1
+        slideNew = slideNumber - 1
+    } else if ((btn === 'projects-img__prev') && (slideNumber === 1)) {
+        slideNew = sliderElements.length
     } else if ((btn === 'projects-img__next') && (slideNumber < sliderElements.length)) {
-        slideNew = parseInt(slideNumber) + 1
+        slideNew = slideNumber + 1
+    } else if ((btn === 'projects-img__next') && (slideNumber === sliderElements.length)) {
+        slideNew = 1
     }
 
     if (slideNew) {
         slideCurrent.classList.remove('slide-active')
-
-        sliderElements.forEach(el => {
-            if (el.dataset.slide === slideNew.toString()) {
-                el.classList.add('slide-active')
-                btnNumber.textContent = slideNew.toString()
-            }
-        })
+        sliderElements[slideNew - 1].classList.add('slide-active')
+        btnText.textContent = slideNew
     }
+}
+
+// show images modal
+document.querySelectorAll('.btn-expand').forEach(btn => {
+    btn.addEventListener('click', expandImageBtn)
+})
+
+function expandImageBtn(event) {
+    let modal = document.getElementById('modal')
+    let modalContent = modal.querySelector('.modal__content')
+    let img = event.target.closest('.projects__item').querySelector('.projects__img')
+    let modalImg = img.cloneNode(true)
+    let close = document.querySelector('.modal__close')
+
+    modal.style.display = 'block'
+    modalContent.appendChild(modalImg)
+
+    modalContent.querySelector('.projects-img__btn').addEventListener('click', projectsBtn)
+
+    close.addEventListener('click', () => {
+        modalContent.innerHTML = ''
+        modal.style.display = 'none'
+    })
 }

@@ -4,8 +4,8 @@ html(lang='en')
         head
             meta(charset='UTF-8')
             meta(http-equiv='X-UA-Compatible' content='IE=Edge')
-            meta(name='description' content='Portfolio')
-            meta(name='keywords' content='website, portfolio, html, css')
+            meta(name='description' content='Website layout. Olena Tsybulska`s portfolio')
+            meta(name='keywords' content='website, site, portfolio, html, css, layout')
             meta(name='author' content='Olena Tsybulska')
             meta(name='viewport' content='width=device-width, initial-scale=1')
             title Olena Tsybulska
@@ -17,6 +17,9 @@ html(lang='en')
     body
         script(type ='text/javascript').
             localStorage.getItem("theme-switched")&&(document.body.setAttribute("style","--color-bg:#ffffff;--color-text:#322824;--color-primary:#e0d1cc;--color-secondary:#00b5ff;--color-shadow1:0 0 10px 5px rgba(0, 0, 0, 0.05);--color-shadow2:0 5px 0 rgba(0, 0, 0, 0.1)"));
+        #modal.modal
+            span.modal__close &times;
+            .modal__content
         block header
             include header
         block content
