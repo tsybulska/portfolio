@@ -83,6 +83,10 @@
 
         &__prev,
         &__next {
+            background-color: transparent;
+            border: none;
+            outline: transparent;
+            color: $color-text1;
             padding: 10px 30px;
             cursor: pointer;
         }
@@ -164,6 +168,14 @@
             li {
                 margin: 0 10px;
             }
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .projects {
+        &__label {
+            margin-left: -30px;
         }
     }
 }

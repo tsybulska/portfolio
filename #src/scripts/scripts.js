@@ -129,7 +129,7 @@ document.querySelectorAll('.projects-img__btn').forEach(btn => {
 })
 
 function projectsBtn(event) {
-    let btn = event.target.closest('a').className
+    let btn = event.target.closest('button').className
     let btnText = event.target.closest('.projects__img').querySelector('.projects-img__num').querySelector('span')
     let slider = event.target.closest('.projects__img').querySelector('.projects-img__slider')
     let sliderElements = slider.querySelectorAll('.projects-img__slide')

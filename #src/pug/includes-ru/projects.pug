@@ -8,15 +8,15 @@ section#projects.projects
     input#Build(type='radio' name='categories' value='Build')
     ul.projects__label
         li.projects__all
-            label(for='All') All
+            label(for='All') Все
         li
-            label(for='HTML') HTML
+            label(for='HTML') Верстка
         li
-            label(for='JavaScript') JavaScript
+            label(for='ReactJS') Реакт
         li
-            label(for='ReactJS') ReactJS
+            label(for='JavaScript') Разработка
         li
-            label(for='Build') Build
+            label(for='Build') Сборка
     ul.projects__list
         li.projects__item(data-category='HTML JavaScript' data-name='kunzhut')
             .projects__img.projects-img
@@ -43,11 +43,11 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/kunzhut5.webp, ./assets/img/kunzhut5-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/kunzhut5.jpg' data-srcset='./assets/img/kunzhut5.jpg, ./assets/img/kunzhut5-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 5
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -60,7 +60,7 @@ section#projects.projects
                         li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
                         li JavaScript, Gulp
                         li Адаптивность, Кроссбраузерность
-                        li Оптимизация Скорости Страницы
+                        li Оптимизация Скорости Загрузки Страницы
                     h4 Подробнее
                     p Разработка 2х js калькуляторов и верстка 4х адаптивных страниц из .psd макетов для пиццерии
                     p Конструктор пиццы из ингридиентов. В этом калькуляторе при нажатии на ингридиенты/соусы их фото появляются на пицце, подсвечиваются цветом и появляется цена. При повторном нажатии убираются
@@ -96,16 +96,16 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/city-mober5.webp, ./assets/img/city-mober5-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/city-mober5.jpg' data-srcset='./assets/img/city-mober5.jpg, ./assets/img/city-mober5-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 5
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
                         span &lt;
-                        |   Адаптивная Верстка City Mober  
+                        |   Адаптивная Верстка CityMober  
                         span /&gt;
                 .projects-about__text
                     h4 Навыки
@@ -113,7 +113,7 @@ section#projects.projects
                         li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
                         li JavaScript, Gulp
                         li Адаптивность, Кроссбраузерность
-                        li Оптимизация Скорости Страницы
+                        li Оптимизация Скорости Загрузки Страницы
                     h4 Подробнее
                     p Адаптивная верстка для последующей натяжки на cms, интерактивные элементы
                     p SVG маска для фотографий (вырезка линий на фото программно, при замене картинок на новые они так же будут вырезаны) в блоке инстаграмма
@@ -135,11 +135,11 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/website-gosurf.webp, ./assets/img/website-gosurf-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/website-gosurf.jpg' data-srcset='./assets/img/website-gosurf.jpg, ./assets/img/website-gosurf-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 1
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -182,11 +182,11 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/js-filter-calculator3.webp, ./assets/img/js-filter-calculator3-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/js-filter-calculator3.jpg' data-srcset='./assets/img/js-filter-calculator3.jpg, ./assets/img/js-filter-calculator3-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 3
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -199,7 +199,7 @@ section#projects.projects
                         li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
                         li JavaScript, Gulp
                         li Адаптивность, Кроссбраузерность
-                        li Оптимизация Скорости Страницы
+                        li Оптимизация Скорости Загрузки Страницы
                     h4 Подробнее
                     p Фильтр и калькулятор для Steam игры
                     p У каждого объекта есть имя и 3 разных свидетельства, позволяющих его распознать. Игрок может выбрать до трех доказательств или исключить их, нажимая на иконку креста. При попытке выбрать больше трех появляется заглушка. Выбранные доказательства выделяются разными цветами
@@ -220,11 +220,11 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/website-mitravel.webp, ./assets/img/website-mitravel-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/website-mitravel.jpg' data-srcset='./assets/img/website-mitravel.jpg, ./assets/img/website-mitravel-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 1
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -260,11 +260,11 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/website-mogo.webp, ./assets/img/website-mogo-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/website-mogo.jpg' data-srcset='./assets/img/website-mogo.jpg, ./assets/img/website-mogo-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 1
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -298,11 +298,11 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/survey-form.webp, ./assets/img/survey-form-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/survey-form.jpg' data-srcset='./assets/img/survey-form.jpg, ./assets/img/survey-form-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 1
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -334,11 +334,11 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/email.webp, ./assets/img/email-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/email.jpg' data-srcset='./assets/img/email.jpg, ./assets/img/email-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 1
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -366,11 +366,11 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/js-game-squares.webp, ./assets/img/js-game-squares-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/js-game-squares.jpg' data-srcset='./assets/img/js-game-squares.jpg, ./assets/img/js-game-squares-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 1
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -383,7 +383,7 @@ section#projects.projects
                         li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
                         li JavaScript, Gulp
                         li Адаптивность, Кроссбраузерность
-                        li Оптимизация Скорости Страницы
+                        li Оптимизация Скорости Загрузки Страницы
                     h4 Подробнее
                     p Подсчет времени и очков
                     p Ручная установка времени
@@ -404,11 +404,11 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/js-game-fighter.webp, ./assets/img/js-game-fighter-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/js-game-fighter.jpg' data-srcset='./assets/img/js-game-fighter.jpg, ./assets/img/js-game-fighter-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 1
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -421,7 +421,7 @@ section#projects.projects
                         li HTML5/Pug, CSS3/SCSS/БЭМ, SVG Спрайт
                         li JavaScript, Gulp
                         li Адаптивность, Кроссбраузерность
-                        li Оптимизация Скорости Страницы
+                        li Оптимизация Скорости Загрузки Страницы
                     h4 Подробнее
                     p ES6 классы и контекст this
                     p У двух бойцов есть свои характеристики, отображаемые через JS
@@ -442,11 +442,11 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/reactjs-todo.webp, ./assets/img/reactjs-todo-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/reactjs-todo.jpg' data-srcset='./assets/img/reactjs-todo.jpg, ./assets/img/reactjs-todo-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 1
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
@@ -479,16 +479,16 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/gulp-build.webp, ./assets/img/gulp-build-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/gulp-build.jpg' data-srcset='./assets/img/gulp-build.jpg, ./assets/img/gulp-build-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 1
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
                         span &lt;
-                        |  Gulp Сборщик  
+                        |  Gulp Сборка  
                         span /&gt;
                 .projects-about__text
                     h4 Навыки
@@ -507,7 +507,7 @@ section#projects.projects
                         li serve.js — Просмотр server, watching
                     h4 Подробнее
                     ul
-                        li Made my own Build
+                        li Сделанная мной Сборка
                         li Resize mobile or tablet images, retina 1x, 2x, 3x via gulp task and use with picture tag
                         li Automaticly create svg sprite by adding svg icons to /#src/assets/icons/, svg support ie
                         li Automaticly create favicon by adding the svg icon to /#src/assets/favicon/
@@ -517,7 +517,7 @@ section#projects.projects
                         li Copy script libs via gulp task from /node_modules/ and copy them to scripts.js
                 .projects-about__btn
                     a(href='./assets/projects/gulp-build/index.html' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
-                    a(href='https://github.com/tsybulska/gulp-build' target='_blank' rel='nofollow noopener').btn.btn-code Код and Readme
+                    a(href='https://github.com/tsybulska/gulp-build' target='_blank' rel='nofollow noopener').btn.btn-code Код и Readme
         li.projects__item(data-category='Build' data-name='webpack-build')
             .projects__img.projects-img
                 .projects-img__slider
@@ -527,23 +527,23 @@ section#projects.projects
                             source(class='lazyload' data-srcset='./assets/img/gulp-build.webp, ./assets/img/gulp-build-640.webp 640w' type='image/webp')
                             img(class='lazyload' data-src='./assets/img/gulp-build.jpg' data-srcset='./assets/img/gulp-build.jpg, ./assets/img/gulp-build-640.jpg 640w' alt='project')
                 .projects-img__btn
-                    a.projects-img__prev &#x276E
-                    a.projects-img__num
+                    button.projects-img__prev &#x276E
+                    p.projects-img__num
                         span 1
                         |  ... 1
-                    a.projects-img__next &#x276F
+                    button.projects-img__next &#x276F
             .projects__about.projects-about
                 .projects-about__header
                     h3
                         span &lt;
-                        |  Webpack Сборщик  
+                        |  Webpack Сборка  
                         span /&gt;
                 .projects-about__text
                     h4 Навыки
                     ul
                         li 
                     h4 Подробнее
-                    p Made my own Build
+                    p Сделанная мной Сборка
                 .projects-about__btn
                     a(href='#' target='_blank' rel='nofollow noopener').btn.btn-open Просмотр
-                    a(href='https://github.com/tsybulska/webpack-build' target='_blank' rel='nofollow noopener').btn.btn-code Код and Readme
+                    a(href='https://github.com/tsybulska/webpack-build' target='_blank' rel='nofollow noopener').btn.btn-code Код и Readme
